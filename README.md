@@ -2,7 +2,7 @@
 <p align="center">An AirBnB clone.</p>
 
 <p align="center">
-  <img src="https://github.com/bdbaraban/AirBnB_clone_v2/blob/master/assets/hbnb_logo.png"
+  <img src="https://github.com/AnduAlemayehu/AirBnB_clone_v2/blob/master/assets/hbnb_logo.png"
 	    alt="HolbertonBnB logo">
 </p>
 
@@ -17,12 +17,12 @@ servers and one load balancer - with Nginx and HAProxy.
 HolbertonBnB is still in active development, with complete functionality set to
 deploy in the coming month:
 
-* Complete integration of a RESTful API
-* Full configuration of website with domain name
-* Serving of dynamic content using JavaScript
+- Complete integration of a RESTful API
+- Full configuration of website with domain name
+- Serving of dynamic content using JavaScript
 
 <p align="center">
-  <img src="https://github.com/bdbaraban/AirBnB_clone_v2/blob/master/assets/hbnb_stack.png"
+  <img src="https://github.com/AnduAlemayehu/AirBnB_clone_v2/blob/master/assets/hbnb_stack.png"
 	    alt="HolbertonBnB stack">
 </p>
 
@@ -43,11 +43,9 @@ Recognizing that I am sharing a near-complete project, I additionally put
 together a small Flask app according to the specifications described in the
 application. Please take a look at this separate repository here:
 
-https://github.com/bdbaraban/lyft_apprenticeship_application
-
 Nonetheless, allow me to talk a little more about this AirBnB clone. This
 repository is the second iteration of the project. In the first version
-(viewable [here](https://github.com/bdbaraban/AirBnB_clone)), I, together
+(viewable [here](https://github.com/AnduAlemayehu/AirBnB_clone)), I, together
 with a cohort mate, built up the initial file storage back-end and
 console from scratch. We pair programmed for most all of this version one work.
 
@@ -59,7 +57,7 @@ to build up the database storage engine of the back-end.
 In between each version, I put together an entire CSS-styled HTML web page
 for the project. This front-end development was coded independently, although
 the HTML files I personally wrote are only posted in
-[version one](https://github.com/bdbaraban/AirBnB_clone) (the
+[version one](https://github.com/AnduAlemayehu/AirBnB_clone) (the
 [web_static](./web_static) folder in this directory was included in the
 fork). Addtionally, all Shell, Puppet, and Fabric deployment scripts/manifests
 were coded myself.
@@ -85,13 +83,13 @@ screenshots are viewable in the README of the [web_flask](./web_flask) directory
 
 HolbertonBnB supports the following classes:
 
-* BaseModel
-* User
-* State
-* City
-* Amenity
-* Place
-* Review
+- BaseModel
+- User
+- State
+- City
+- Amenity
+- Place
+- Review
 
 ## Storage :baggage_claim:
 
@@ -194,7 +192,8 @@ $
 The HolbertonBnB console supports the following commands:
 
 #### create
-* Usage: `create <class> <param 1 name>=<param 1 value> <param 2 name>=<param 2 value> ...`
+
+- Usage: `create <class> <param 1 name>=<param 1 value> <param 2 name>=<param 2 value> ...`
 
 Creates a new instance of a given class. The class' ID is printed and
 the instance is saved to the file `file.json`. When passing parameter key/value
@@ -211,13 +210,14 @@ $ cat file.json ; echo ""
 {"BaseModel.119be863-6fe5-437e-a180-b9892e8746b8": {"updated_at": "2019-02-17T2
 1:30:42.215277", "created_at": "2019-02-17T21:30:42.215277", "__class__": "Base
 Model", "id": "119be863-6fe5-437e-a180-b9892e8746b8"}, {'id': 'd80e0344-63eb-43
-4a-b1e0-07783522124e', 'created_at': datetime.datetime(2017, 11, 10, 4, 41, 7, 
+4a-b1e0-07783522124e', 'created_at': datetime.datetime(2017, 11, 10, 4, 41, 7,
 842160), 'updated_at': datetime.datetime(2017, 11, 10, 4, 41, 7, 842235), 'name
 ': 'California'}}
 ```
 
 #### show
-* Usage: `show <class> <id>` or `<class>.show(<id>)`
+
+- Usage: `show <class> <id>` or `<class>.show(<id>)`
 
 Prints the string representation of a class instance based on a given id.
 
@@ -228,18 +228,19 @@ $ ./console.py
 (hbnb)
 (hbnb) show User 1e32232d-5a63-4d92-8092-ac3240b29f46
 [User] (1e32232d-5a63-4d92-8092-ac3240b29f46) {'id': '1e32232d-5a63-4d92-8092-a
-c3240b29f46', 'created_at': datetime.datetime(2019, 2, 17, 21, 34, 3, 635828), 
+c3240b29f46', 'created_at': datetime.datetime(2019, 2, 17, 21, 34, 3, 635828),
 'updated_at': datetime.datetime(2019, 2, 17, 21, 34, 3, 635828)}
 (hbnb)
 (hbnb) User.show(1e32232d-5a63-4d92-8092-ac3240b29f46)
 [User] (1e32232d-5a63-4d92-8092-ac3240b29f46) {'id': '1e32232d-5a63-4d92-8092-a
-c3240b29f46', 'created_at': datetime.datetime(2019, 2, 17, 21, 34, 3, 635828), 
+c3240b29f46', 'created_at': datetime.datetime(2019, 2, 17, 21, 34, 3, 635828),
 'updated_at': datetime.datetime(2019, 2, 17, 21, 34, 3, 635828)}
 (hbnb)
 ```
 
 #### destroy
-* Usage: `destroy <class> <id>` or `<class>.destroy(<id>)`
+
+- Usage: `destroy <class> <id>` or `<class>.destroy(<id>)`
 
 Deletes a class instance based on a given id.
 
@@ -258,7 +259,8 @@ $ cat file.json ; echo ""
 ```
 
 #### all
-* Usage: `all` or `all <class>` or `<class>.all()`
+
+- Usage: `all` or `all <class>` or `<class>.all()`
 
 Prints the string representations of all instances of a given class. If no
 class name is provided, the command prints all instances of every class.
@@ -285,7 +287,7 @@ eModel] (fce2124c-8537-489b-956e-22da455cbee8) {'updated_at': datetime.datetime
 (hbnb) User.all()
 ["[User] (8f2d75c8-fb82-48e1-8ae5-2544c909a9fe) {'updated_at': datetime.datetim
 e(2019, 2, 17, 21, 44, 44, 428413), 'created_at': datetime.datetime(2019, 2, 17
-, 21, 44, 44, 428413), 'id': '8f2d75c8-fb82-48e1-8ae5-2544c909a9fe'}", "[User] 
+, 21, 44, 44, 428413), 'id': '8f2d75c8-fb82-48e1-8ae5-2544c909a9fe'}", "[User]
 (b742dbc3-f4bf-425e-b1d4-165f52c6ff81) {'updated_at': datetime.datetime(2019, 2
 , 17, 21, 44, 15, 974608), 'created_at': datetime.datetime(2019, 2, 17, 21, 44,
 15, 974608), 'id': 'b742dbc3-f4bf-425e-b1d4-165f52c6ff81'}"]
@@ -307,7 +309,8 @@ c3-f4bf-425e-b1d4-165f52c6ff81) {'updated_at': datetime.datetime(2019, 2, 17, 2
 ```
 
 #### count
-* Usage: `count <class>` or `<class>.count()`
+
+- Usage: `count <class>` or `<class>.count()`
 
 Retrieves the number of instances of a given class.
 
@@ -328,7 +331,8 @@ aa229cbb-5b19-4c32-8562-f90a3437d301
 ```
 
 #### update
-* Usage: `update <class> <id> <attribute name> "<attribute value>"`
+
+- Usage: `update <class> <id> <attribute name> "<attribute value>"`
 
 Updates a class instance based on a given id with a given key/value attribute
 pair or dictionary of attribute pairs. If `update` is called with a single
@@ -340,7 +344,7 @@ $ ./console.py
 (hbnb) create User
 6f348019-0499-420f-8eec-ef0fdc863c02
 (hbnb)
-(hbnb) update User 6f348019-0499-420f-8eec-ef0fdc863c02 first_name "Holberton" 
+(hbnb) update User 6f348019-0499-420f-8eec-ef0fdc863c02 first_name "Holberton"
 (hbnb) show User 6f348019-0499-420f-8eec-ef0fdc863c02
 [User] (6f348019-0499-420f-8eec-ef0fdc863c02) {'created_at': datetime.datetime(
 2019, 2, 17, 21, 54, 39, 234382), 'first_name': 'Holberton', 'updated_at': date
@@ -365,8 +369,5 @@ $ python3 unittest -m tests/test_console.py
 ```
 
 ## Authors :black_nib:
-* **Brennan D Baraban** <[bdbaraban](https://github.com/bdbaraban)>
-* **Samie Azad** <[sazad44](https://github.com/sazad44)>
-* **Andrew Lindburg** <[atlindburg](https://github.com/atlindburg)>
-* **Kevin Yook** <[yook00627](https://github.com/yook00627)>
-* **Miranda Evans** <miranda.r.evans@gmail.com>
+
+- **Andu Alemayehu** <[AnduAlemayehu](https://github.com/AnduAlemayehu)>
